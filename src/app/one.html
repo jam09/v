@@ -1,0 +1,20 @@
+<div class="block-content">
+    <h3 class="block-title">Educación</h3>
+    <div class="timeline education">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="exp-holder">
+                  <div *ngFor="let edux of cv.educacion">
+                    <div class="exp">
+                        <div class="hgroup">
+                            <h4>{{ edux.Nombre }} | <a href="{{ edux.Url }}" target="_blank"><span>Ver Certificado</span></a></h4>
+                            <h5>{{ edux.Fecha }}</h5>
+                        </div>
+                        <p>{{ edux.Descripcion }}</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

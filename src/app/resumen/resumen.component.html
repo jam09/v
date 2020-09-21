@@ -1,0 +1,230 @@
+<section class="content" id="about">
+    <div class="block-content">
+        <h3 class="block-title">Perfil</h3>
+        <h3 class="subheading">¡Hola! Mi nombre es javier trejo <strong> Programador BackEnd/FrontEnd  Diseñador web</strong></h3>
+
+
+        <p>soy creador de Byte Rest, un canal de desarrollo web,CiberSeguridad. Llevó más de 3 años desarrollando y diseñando sitios web, día a día aprendiendo las nuevas técnicas y tecnologías relacionadas al desarrollo web,y la seguridad informática, todo
+            esto está plasmado en los trabajos que vengo realizando y en los tutoriales de desarollo web, recibiendo muchos comentarios positivos por parte de muchas personas Entre mis habilidades más desarrolladas en cuestión al desarrollo web están:
+            HTML5 CSS3 JavaScript PHP (Intermedio) Angular Node Js Strapi pententing Seguridad de red</p>
+        <div class="info-list row">
+            <div class="col-sm-6"><span>Nombre : </span> Javier trejo</div>
+            <div class="col-sm-6"><span>Fecha de Nacimiento : </span> Abril 27, 1999 </div>
+            <div class="col-sm-6"><span>Dirección : </span>Cancún, Quintana Roo.</div>
+            <div class="col-sm-6"><span>Email : </span> javiertrejoyam@hotmail.com</div>
+            <div class="col-sm-6"><span>Telefono : </span> + 99 81 03 85 08</div>
+            <div class="col-sm-6"><span>Interes : </span> Frelance, Full-Time</div>
+        </div>
+    </div>
+    <div class="block-content">
+        <h3 class="block-title">Profesional</h3>
+        <div *ngFor="let profex of cv.profesional">
+            <label class="progress-bar-label">{{ profex.nombre }}</label>
+            <div class="progress">
+                <div [style.width.%]=profex.valor class="progress-bar" role="progressbar" attr.aria-valuenow="{{ profex.valor }}" aria-valuemin="0" aria-valuemax="100">
+                    <span>{{ profex.valor }}%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-content">
+        <h3 class="block-title">Cursos</h3>
+        <div class="timeline experience">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="exp-holder">
+                        <div *ngFor="let expex of cv.experiencia">
+                            <div class="exp">
+                                <div class="hgroup">
+                                    <h4><span>{{ expex.Empresa }}</span> - {{ expex.Cargo }}</h4>
+                                    <h5> {{ expex.Fecha }} </h5>
+                                </div>
+                                <p>{{ expex.Descripcion }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="block-content">
+        <h3 class="block-title">Educación</h3>
+        <div class="timeline education">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="exp-holder">
+                        <div *ngFor="let edux of cv.educacion">
+                            <div class="exp">
+                                <div class="hgroup">
+                                    <h4>{{ edux.Nombre }} | <a href="{{ edux.Url }}" target="_blank"><span>Ver Certificado</span></a></h4>
+                                    <h5>{{ edux.Fecha }}</h5>
+                                </div>
+                                <p>{{ edux.Descripcion }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----
+    <div class="block-content">
+        <h3 class="block-title">Servicios</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-laptop"></i>
+                </div>
+                <h4>Diseño Web</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-pie-graph"></i>
+                </div>
+                <h4>Desarrollo de Aplicaciones</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-paintbucket"></i>
+                </div>
+                <h4>Diseño Grafico</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-printer"></i>
+                </div>
+                <h4>Print Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-qr-scanner"></i>
+                </div>
+                <h4>Graphic Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <div class="service-icon">
+                    <i class="ion-social-buffer"></i>
+                </div>
+                <h4>Print Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+        </div>
+    </div>-->
+    <div class="block-content">
+        <h3 class="block-title"></h3>
+
+        <div class="row" class="portfolio-container row isotope">
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/javascript.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/an.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/foca.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/logo.jpg" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/node.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/php.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/strapi.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 awards">
+                <img src="../../assets/images/awards/adobe.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="block-content">
+        <h3 class="block-title">Equipo de Trabajo</h3>
+        <div class="row">
+            <div id="liontestimonial" class="owl-carousel owl-theme">
+                <div>
+                    <div class="item testimonials">
+                        <img src="assets\images\testimonials\virus.jpeg" alt="">
+                        <blockquote>
+                            <ul>
+                                <li>
+                                    <p>Manejo de herramientas de desarrollo:
+                                    </p>
+                                    <ol>
+                                        MySQL ,Angular ,Nodejs Android Studio, Git
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>Lenguajes de programación:</p>
+                                    <ol>
+                                        Javascript ,Typescript ,SQL ,Java
+
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>Desarrollar servicios y APIs REST con NodeJS, Express,JWT. Desarrollo de aplicaciones web front-end complejas con la nueva versión de Angular(2,4,5,6,7,8,9 y 10). Desarrollo de apps Android AVANZADAS, Android Jetpack,
+                                        MVVM, MVP, Animaciones, Room, Consumir APIs con seguridad por Token. Uso de GitHub para administración de proyectos. Manejo de base de datos MySQL. Actualmente estoy en el desarrollo de una API REST con NodeJS y
+                                        en el desarrollo de una aplicación web con el framework de Angular.</p>
+
+                                </li>
+
+                            </ul>
+                            <p class="quote"><span>Victor Jiménez Gutiérrez</span> - Estudiante</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div>
+                    <div class="item testimonials">
+                        <img src="assets\images\testimonials\dany.jpeg" alt="">
+                        <blockquote>
+                            <ul>
+                                <li>
+                                    <p>Manejo de herramientas de desarrollo:
+                                    </p>
+                                    <ol>
+                                        MySQL ,Angular ,Nodejs Android Studio, Git,ionic,HTML5,Adobe Illustrator
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>Lenguajes de programación:</p>
+                                    <ol>
+                                        Javascript ,Typescript ,SQL ,Java
+
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p></p>
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <p class="quote"><span>Giovanny Brito Lopez</span> -Estudiante</p>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">javiertrejoyam@hotmail.com</a>
+        </div>
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">giovannibritolopez@hotmail.com</a>
+
+        </div>
+    </div>
+</section>
